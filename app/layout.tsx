@@ -4,7 +4,7 @@ import { Nunito } from 'next/font/google';
 import './globals.css';
 import ToasterProvider from './providers/ToasterProvider';
 import RegisterModal from './components/modals/RegisterModal';
-import Navbar from './components/navbar/Navbar';
+import Navbar from './components/nav-bar/Navbar';
 
 export const metadata: Metadata = {
   title: 'Airbnb',
