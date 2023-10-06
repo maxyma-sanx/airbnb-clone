@@ -3,9 +3,8 @@ import { Nunito } from 'next/font/google';
 
 import './globals.css';
 
-import { Navbar } from './components/Navbar';
-
-const font = Nunito({ subsets: ['latin'] });
+import { Navbar, RegisterModal } from './components';
+import { ToasterProvider } from './providers';
 
 export const metadata: Metadata = {
   title: 'Airbnb',
@@ -13,10 +12,14 @@ export const metadata: Metadata = {
     'Airbnb: Vacation Rentals, Cabins, Beach Houses, Unique Homes & Experiences',
 };
 
+const font = Nunito({ subsets: ['latin'] });
+
 export const RootLayout = ({ children }: { children: React.ReactNode }) => {
   return (
     <html lang="en">
       <body className={font.className}>
+        <ToasterProvider />
+        <RegisterModal />
         <Navbar />
         {children}
       </body>

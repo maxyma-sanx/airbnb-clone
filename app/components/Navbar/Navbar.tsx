@@ -1,7 +1,6 @@
 'use client';
 
-import { Logo, Search, UserMenu } from '.';
-import { Container } from '../shared/Container';
+import { Container, Logo, Search, UserMenu } from '..';
 
 const Navbar = () => {
   return (
