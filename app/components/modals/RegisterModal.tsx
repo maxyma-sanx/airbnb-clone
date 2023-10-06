@@ -4,11 +4,14 @@ import { useState } from 'react';
 import axios from 'axios';
 import { FieldValues, SubmitHandler, useForm } from 'react-hook-form';
 import { FcGoogle } from 'react-icons/fc';
-
-import { useRegisterModal } from '@/app/hooks';
-import { Button, Heading, Input, Modal } from '..';
 import { toast } from 'react-hot-toast';
 import { AiFillGithub } from 'react-icons/ai';
+
+import useRegisterModal from '@/app/hooks/useRegisterModal';
+import Heading from '../shared/Heading';
+import Input from '../inputs/Input';
+import Button from '../shared/Button';
+import Modal from './Modal';
 
 const RegisterModal = () => {
   const [isLoading, setIsLoading] = useState(false);

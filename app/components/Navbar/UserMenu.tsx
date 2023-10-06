@@ -3,8 +3,9 @@
 import { useState, useCallback } from 'react';
 import { AiOutlineMenu } from 'react-icons/ai';
 
-import { useRegisterModal } from '@/app/hooks';
-import { Avatar, MenuItem } from '..';
+import useRegisterModal from '@/app/hooks/useRegisterModal';
+import Avatar from '../shared/Avatar';
+import MenuItem from './MenuItem';
 
 const UserMenu = () => {
   const [isOpen, setIsOpen] = useState(false);
